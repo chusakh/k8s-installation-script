@@ -1,0 +1,5 @@
+kubectl cnpg install generate \
+  -n pea-getinvoice \
+  --replicas 3 \
+  --watch-namespace "pg-worker01, pg-worker02, pg-worker03 " \
+  > operator.yaml
