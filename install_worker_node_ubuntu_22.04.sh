@@ -1,5 +1,5 @@
 ./install_k8s_common.sh
-
+sudo apt install ufw
 ufw enable
 
 sudo ufw allow 179/tcp
