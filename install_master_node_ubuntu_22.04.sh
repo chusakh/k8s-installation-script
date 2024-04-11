@@ -1,4 +1,5 @@
 ./install_k8s_common.sh
+snap install helm --classic
 sudo apt install ufw
 ufw enable
 sudo ufw allow 6443/tcp
