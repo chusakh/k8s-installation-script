@@ -1,4 +1,5 @@
 ./install_k8s_common.sh
+sudo apt install ufw
 ufw enable
 sudo ufw allow 6443/tcp
 sudo ufw allow 2379:2380/tcp
@@ -18,5 +19,5 @@ sudo ufw allow 4789/tcp #allows incoming TCP traffic on port 4789,
 sudo ufw allow 2379/tcp #allows incoming TCP traffic on port 2379, 
 #which is used by the etcd datastore for communication 
 # between cluster nodes.
-
+sudo ufw allow ssh
 sudo ufw status
